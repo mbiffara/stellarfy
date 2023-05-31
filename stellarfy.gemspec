@@ -23,4 +23,8 @@ Gem::Specification.new do |spec|
   end
 
   spec.add_dependency "rails", ">= 7.0.4"
+  spec.add_dependency "interactor"
+  spec.add_dependency "stellar-base"
+  spec.add_dependency "stellar-sdk"
+  spec.add_dependency "toml-rb"
 end
