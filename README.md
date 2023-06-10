@@ -21,6 +21,7 @@ $ bundle
 ```
 
 **Mount Engine within your app**
+
 Mount the stellarfy engine in your main app's routes.rb file
 ```
 mount Stellarfy::Engine => '/stellarfy'
@@ -32,7 +33,20 @@ rails stellarfy:install:migrations
 ```
 
 ## Usage
-How to use my plugin.
+**Create an Anchor**
+```
+Stellarfy::Anchor.create(
+  name: 'ExampleTestAnchor',
+  toml_url: 'https://example.com/.well-known/stellar.toml',
+  network: 'TESTNET'
+)
+```
+
+**Create a Wallet**
+```
+Stellarfy::Wallet.create(network: 'TESTNET')
+```
+
 
 ## Contributing
 Feel free to open a PR that will be reviewed by the team at [Pactta](https://www.pactta.com)
