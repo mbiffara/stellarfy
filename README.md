@@ -44,7 +44,7 @@ Stellarfy::Anchor.create(
 
 **Create a Wallet**
 ```
-Stellarfy::Wallet.create(network: 'TESTNET')
+Stellarfy::Wallet.create_wallet(Stellarfy::Networks::TESTNET)
 ```
 
 
