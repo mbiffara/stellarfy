@@ -42,6 +42,11 @@ Stellarfy::Anchor.create(
 )
 ```
 
+Get anchor TOML data
+```
+Anchor.find_by(name: ExampleTestAnchor).toml
+```
+
 **Create a Wallet**
 ```
 my_wallet = Stellarfy::Wallet.create_wallet(Stellarfy::Networks::TESTNET)
@@ -63,7 +68,6 @@ user_jwt = user_auth_result.jwt
 ```
 kyc_info = Stellar::Anchors::Sep12::GetInfo.call(anchor: anchor, jwt: jwt).info
 ```
-
 
 ## Contributing
 Feel free to open a PR that will be reviewed by the team at [Pactta](https://www.pactta.com)
