@@ -27,4 +27,5 @@ Gem::Specification.new do |spec|
   spec.add_dependency "stellar-base"
   spec.add_dependency "stellar-sdk"
   spec.add_dependency "toml-rb"
+  spec.add_dependency "httparty"
 end

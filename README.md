@@ -44,8 +44,11 @@ Stellarfy::Anchor.create(
 
 **Create a Wallet**
 ```
-Stellarfy::Wallet.create_wallet(Stellarfy::Networks::TESTNET)
+my_wallet = Stellarfy::Wallet.create_wallet(Stellarfy::Networks::TESTNET)
+my_wallet.friendbot_fund
 ```
+
+****
 
 
 ## Contributing

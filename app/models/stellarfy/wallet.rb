@@ -24,7 +24,7 @@ module Stellarfy
       })
     end
 
-    def testnet_fund
+    def friendbot_fund
       return unless network == Stellarfy::Networks::TESTNET
   
       response = HTTParty.get("https://friendbot.stellar.org/?addr=#{address}")
