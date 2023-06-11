@@ -48,7 +48,21 @@ my_wallet = Stellarfy::Wallet.create_wallet(Stellarfy::Networks::TESTNET)
 my_wallet.friendbot_fund
 ```
 
-****
+**SEP 10 - Authorization**
+```
+auth_result = Stellar::Anchors::Auth.call(anchor: Anchor.find_by(name: ''), wallet: Wallet.find(wallet_id))
+jwt = auth_result.jwt
+```
+SEP 10 works supports being called with an User parameter, in that case, it will be with memo
+```
+user_auth_result = Stellar::Anchors::Auth.call(anchor: Anchor.find_by(name: ''), wallet: Wallet.find(wallet_id), user: User.find(user_id))
+user_jwt = user_auth_result.jwt
+```
+
+**SEP 12 - KYC**
+```
+kyc_info = Stellar::Anchors::Sep12::GetInfo.call(anchor: anchor, jwt: jwt).info
+```
 
 
 ## Contributing
