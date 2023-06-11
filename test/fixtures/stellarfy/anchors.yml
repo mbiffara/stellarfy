@@ -1,0 +1,17 @@
+# Read about fixtures at https://api.rubyonrails.org/classes/ActiveRecord/FixtureSet.html
+
+one:
+  name: MyString
+  toml_url: MyString
+  enabled: false
+  parsed_toml: 
+  toml_parsed_at: 2023-06-10 19:31:57
+  network: MyString
+
+two:
+  name: MyString
+  toml_url: MyString
+  enabled: false
+  parsed_toml: 
+  toml_parsed_at: 2023-06-10 19:31:57
+  network: MyString

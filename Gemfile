@@ -6,9 +6,13 @@ gemspec
 
 gem "puma"
 
-gem "sqlite3"
+gem "pg"
 
 gem "sprockets-rails"
+
+gem "stellar-base"
+gem "stellar-sdk"
+gem "toml-rb"
 
 
 # Start debugger with binding.b [https://github.com/ruby/debug]
