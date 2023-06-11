@@ -1,0 +1,13 @@
+# add default rubocop configuration
+AllCops:
+  NewCops: enable
+  Exclude:
+    - 'vendor/**/*'
+    - 'spec/fixtures/**/*'
+    - 'tmp/**/*'
+    - '.git/**/*'
+    - 'bin/*'
+  TargetRubyVersion: 3.0
+  SuggestExtensions: false
+
+Style/StringLiterals: double_quotes
